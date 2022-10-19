@@ -5,48 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+
+    <!-- Animaciones CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Envases TITO</title>
+
 </head>
 
 <body>
-    <h1>
-        <font color="blue">Envases TITO</font>
-    </h1>
-    <h2>
-        <font color="green">guia</font>
-    </h2>
+    <header>
 
-    <p align="right">Lunes 9 de agosto de 2021</p>
-    <p> Desde sus comienzos a principios del siglo XX, el <b>internet</b> ha crecido de manera exponencial. En el mundo
-        moderno, la
-        mayoría cuenta con acceso a internet de alguna manera y un gran porcentaje de personas utilizan el internet a
-        diario. El desarrollo web se ha vuelto rápidamente una de las elecciones de carrera más atractivas y mejor
-        pagadas
-        del mundo moderno. Pero, <i>¿qué es un <b>desarrollador web</b> y qué hace exactamente?</i></p>
+    </header>
 
-    <p>Probablemente has pensado aprender uno o dos lenguajes de programación para convertirte en un desarrollador web.
-        Por
-        suerte, nosotros entendemos que quienes aspiran a convertirse en desarrolladores web tienen preguntas sobre la
-        profesión y por eso hemos creado esta guía completa, que pretende responder las preguntas anteriores y más.</p>
-    <p>Analizaremos los tipos de desarrolladores web y examinaremos el debate de diseño web vs. desarrollo web. También
-        hablaremos sobre algunos de los lenguajes de programación más populares para desarrolladores web, incluyendo
-        Python,
-        JavaScript y HTML.</p>
-    <img src="desarrolloweb1.png" alt="Desarrollo Web 1">
-    <img src="desarrolloweb2.png" alt="Desarrollo Web 2">
-    <h3>Lenguajes populares para el desarrollo web Front-End</h3>
-    <p align="center">HTML<br>
-        CSS<br>
-        JavaScript</p>
-    <p align="right">
-        <b>Autor:</b>
-        <em>I</em>
-    </p>
-    <p>
-        <b>Fuente</b>
-        <a href=https://es.bitdegree.org/tutoriales/desarrollador-web>
-        https://es.bitdegree.org/tutoriales/desarrollador-web/</a>
-    </p>
+    <!-- Barra de Navegación -->
+
+    <nav>
+        <h1>ENVASES TITO</h1>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="productos.html" class="nav-link">Productos</a></li>
+            <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+    </nav>
+
+    <!--Main -->
+    <main>
+        <div>
+            <br>
+            <h1>ENVASES TITO</h1>
+            <br> <br><br><br><br><br>
+        </div>
+
+    </main>
+
+    <!-- Sección Contacto-->
+
+    <!-- Sección de redes sociales - Fijado a la derecha -->
+
+    <!-- Vuelve al comienzo  -->
+
+    <!-- Sección Footer  -->
+    <footer>
+        <!-- FOOTER -->
+        <div id="footer">
+            <div id="footer_showroom">
+                <span style="font-weight: 700;">LOCAL DE VENTA AL PÚBLICO</span><br>
+                <span style="font-weight: 500;">por mayor y menor</span><br>
+                <span style="font-weight: 300;">Av. Riestra 1751 - Capital Federal<br>(Altura del Barco Centenera al
+                    2300)</span>
+            </div>
+            <div id="footer_horarios">
+                <span style="font-weight: 700;">Lunes a viernes</span><br>
+                <span style="font-weight: 300;">8:00hs a 12:30hs / 13:30hs a 18:00hs</span><br>
+                <span style="font-weight: 700;">Sábados</span><br>
+                <span style="font-weight: 300;">8:00hs a 13:00hs</span>
+            </div>
+            <div>
+                <div id="footer_telefono">
+                    (+5411) 5263.3021 </div>
+                <div id="footer_email">
+                    <a href="mailto:newsletter@mega-envases.com.ar">newsletter@mega-envases.com.ar</a>
+                </div>
+            </div>
+            <div style="display: inline-block; width: 110px; margin-left: 30px;">
+                <a href="mailto:newsletter@mega-envases.com.ar">
+                    <div id="footer_cv">
+                        Envianos tu CV
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/MegaEnvases" target="_blank">
+                    <div id="footer_fb">
+                        seguinos!
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- FIN FOOTER -->
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
