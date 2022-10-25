@@ -9,12 +9,6 @@
     <!--Estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-
-    <!-- Animaciones CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Envases TITO</title>
     <link rel="icon"  href="icons/butter-jar.ico">
 
@@ -29,26 +23,25 @@
             <div id="contacto_parrafo">
                 Dejanos tu comentario.<br>Brevemente te resolveremos<br>la inquietud.
             </div>
-            <div id="contacto_campo_obligatorio">
-                (*) Campos obligatorios
-            </div>
+
         </div>
         <div id="mensaje_contacto" class="right_2" style="margin-top: 80px;">
-            <form name="form_contacto" id="form_contacto" method="post">
-                <div class="campo">Nombre(*)</div>
+            <form name="form_contacto" action="" id="form_contacto" method="post">
+                <div class="campo">Nombre</div>
                 <input type="text" class="input_contacto" name="nombre" id="nombre_input" value="">
-                <div class="campo">Apellido(*)</div>
+                <div class="campo">Apellido</div>
                 <input type="text" class="input_contacto" name="apellido" id="apellido_input" value="">
                 <div class="campo">Empresa</div>
                 <input type="text" class="input_contacto" name="empresa" value="">
-                <div class="campo">Teléfono(*)</div>
+                <div class="campo">Teléfono</div>
                 <input type="text" class="input_contacto" name="telefono" id="telefono_input" value="">
-                <div class="campo">E-mail(*)</div>
+                <div class="campo">E-mail</div>
                 <input type="text" class="input_contacto" name="email_input" id="email_input" value="">
                 <div class="campo">Consulta</div>
-                <textarea class="textarea_contacto" name="consulta"></textarea>
+                <textarea class="textarea_contacto" name="consulta" cols="30" rows="5"></textarea>
+                <input type="submit" value="Enviar">
+
             </form>
-            <div class="submit_contacto" onClick="sendContacto();">ENVIAR</div>
         </div>
 </body>
 
