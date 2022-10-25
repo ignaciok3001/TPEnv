@@ -10,7 +10,7 @@
   --bolder-font: 900;
   --bg-color: #fcfcfc;
   --primary-color: #4756df;
-  --secondary-color:rgb(193, 209, 45);
+  --secondary-color: rgb(193, 209, 45);
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -120,7 +120,7 @@ nav ul li {
 .wrap {
   width: 100vw;
   height: 40vw;
-  
+
 
   /*display: flex;*/
   /*align-items: center;*/
@@ -139,7 +139,7 @@ nav ul li {
   font-size: 1.5rem;
   text-shadow: 2px 2px 5px black;
   position: relative;
-  top: 100px ;
+  top: 100px;
   left: 100px;
 
 }
@@ -262,11 +262,11 @@ footer {
     transition: transform 0.5s ease-in;
   }
 
-   nav ul li {
+  nav ul li {
     margin: 8px;
   }
 
-  .menu-hamburguesa {
+  .burger-menu{
     display: block;
   }
 
@@ -275,24 +275,25 @@ footer {
   }
 
 
-/* Fin Menu Hamburguesa*/
+  /* Fin Menu Hamburguesa*/
 
- .wrap_texto{
-  font-size: .7rem;
-  position: absolute;
+  .wrap_texto {
+    font-size: .7rem;
+    position: absolute;
 
-}
-
-  aside {
-    display: none;
   }
+
+  /*aside {
+    display: none;
+  }*/
 
   footer {
     flex-direction: column;
     /*width: ;*/
     /*align-: center;*/
-   /* gap: 1.1rem;*/
+    /* gap: 1.1rem;*/
   }
+
   /*footer div{
     /*text-align:center;
   }*/
@@ -311,17 +312,3 @@ footer {
 }
 
 /* Responsive ends*/
-
-
-
-/*footer div{
-  color: aqua;
-} */
-
-/*<!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
->     -->*/

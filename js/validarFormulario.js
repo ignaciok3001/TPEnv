@@ -13,6 +13,7 @@ function validarFormulario() {
     var correo = document.getElementById("email");
     var asunto = document.getElementById("asunto");
     var comentarios = document.getElementById("comentarios");
+    
     //Campo nombre
     if (!nombre.value) {
         alert("El nombre es requerido");
@@ -60,25 +61,13 @@ function validarFormulario() {
         comentarios.focus();
         return false;
     }
-    this.submit();
+
     return true;
 }
 
 //asociacion del boton enviar con el formulario en html//
-window.onload = function () {
-    var formulario = document.getElementById("formulario");
-    formulario.onclick = validarFormulario;
-}
 
-/*var fname = document.getElementById('fname').value;
-if (fname.length == 0) {
-    alert('No has escrito nada en el nombre');
-    return;
+window.onload = function () {
+    var input = document.getElementById("enviar");
+    input.onclick = validarFormulario;
 }
-var corp = document.getElementById('corp').value;
-if (corp.length < 6) {
-    alert('La empresa no es válida');
-    return;
-}
-this.submit();
-  }*/

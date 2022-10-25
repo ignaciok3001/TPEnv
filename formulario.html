@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/estilos.css" />
 
     <!-- Favicons -->
-    <!--- -> <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" /> -->
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" -->
+    <!-- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
 
     <title>Envases TITO</title>
     <link rel="icon" href="icons/butter-jar.ico">
@@ -34,7 +34,7 @@
             <li><a href="index.html" class="nav-link">Inicio</a></li>
             <li><a href="productos.html" class="nav-link">Productos</a></li>
             <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li><a href="formulario.html" class="nav-link">Contacto</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
             <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -84,8 +84,7 @@
 
     <!-- Sección Footer  -->
     <footer>
-        <!-- FOOTER -->
-        <!--<div id="footer">-->
+
         <div id="footerShowroom">
             <div>
                 <img src="icons/icons8-home-48.png" alt="home">
@@ -153,34 +152,17 @@
         <!-- FIN FOOTER -->
     </footer>
 
-    <!--<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("formulario").addEventListener('submit', validarFormulario);
-        });
+    <!-- Ion icons scripts (para la hamburguesa)-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        function validarFormulario(evento) {
-            evento.preventDefault();
-            var fname = document.getElementById('fname').value;
-            if (fname.length == 0) {
-                alert('Complete el nombre');
-                return;
-            }
-
-            var lname = document.getElementById('fname').value;
-            if (lname.length == 0) {
-                alert('Complete el apellido');
-                return;
-            }
-            var email = document.getElementById('corp').value;
-            if !(email.includes(@))  {
-                alert('El email no es válido');
-                return;
-            }
-            this.submit();
-        }
-    </script> -->
     <!-- Java Scripts    -->
     <script src="js/validarFormulario.js"></script>
+
+
+    <!-- Website scripts -->
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
