@@ -44,43 +44,62 @@
 
     <!--Main -->
     <main>
-        <div>
-            <br>
-            <h2>Consultas</h2>
+        <section class="contacto" id="contacto">
 
-            <form action="" name="formulario" id="formulario" method="post">
-                <!-- <fieldset>-->
+            <div class="contenedor-formulario-contacto">
+                <h2>Consultas</h2>
+                <p>Por favor complete todos los campos </p>
+                <div class="formulario-contacto">
+                    <form action="" name="formulario" id="formulario" method="post">
+                        <!--action="https://formspree.io/f/*****" para comprobar-->
 
-                <label for="fname">Nombre:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Apellido:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <textarea type="text" id="comentarios" cols="50" rows="5" class="formulario__input"
-                    placeholder="Comentarios"></textarea>
-                <input type="submit" value="Enviar" class="formulario__submit" id="enviar" name="enviar_btn">
+                        <!-- <fieldset>-->
+                        <div class="control-formulario">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" class="input-field" id="fname" name="fname"><br><br>
+                        </div>
 
-                <!--<input type="submit" value="Enviar" onclick="validarFormulario()"> -->
-                <!--</fieldset>-->
-            </form>
+                        <div class="control-formulario">
+                            <label for="lname">Apellido:</label>
+                            <input type="text" class="input-field" id="lname" name="lname"><br><br>
+                        </div>
 
-            <br> <br><br><br><br><br>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d26280.66474099584!2d-58.570017!3d-34.576764!3m2!1i1024!2i768!4f13.1!2m1!1sInd%C3%BAstria%20N%C2%BA5058%20-%20Villa%20Bonich!5e0!3m2!1ses-419!2sar!4v1666558485203!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+                        <div class="control-formulario">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" class="input-field" id="asunto" name="asunto"><br><br>
+                        </div>
+
+                        <div class="control-formulario">
+                            <label for="email">Email:</label>
+                            <input type="email" class="input-field" id="email" name="email"><br><br>
+                        </div>
+
+                        <div class="control-formulario">
+                            <textarea type="text" id="comentarios" name="mensaje" cols="60" rows="10"
+                                class="input-field" placeholder="Comentarios"></textarea>
+                        </div>
+
+                        <input type="submit" value="Enviar" class="formulario_submit" id="enviar" name="enviar_btn">
+
+                        <!--<input type="submit" value="Enviar" onclick="validarFormulario()"> -->
+                        <!--</fieldset>-->
+                    </form>
+                </div>
+
+            </div>
+            <div>
+                <h2>Ubicación</h2>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d26280.66474099584!2d-58.570017!3d-34.576764!3m2!1i1024!2i768!4f13.1!2m1!1sInd%C3%BAstria%20N%C2%BA5058%20-%20Villa%20Bonich!5e0!3m2!1ses-419!2sar!4v1666558485203!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Sección Contacto-->
-
-    <!-- Sección de redes sociales - Fijado a la derecha -->
-
-    <!-- Vuelve al comienzo  -->
 
     <!-- Sección Footer  -->
     <footer>
