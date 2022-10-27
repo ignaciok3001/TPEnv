@@ -21,3 +21,21 @@ navLink.forEach((link) =>
   })
 );
 
+const direccion = 'https://jsonplaceholder.typicode.com';
+const  xhr = new XMLHttpRequest();
+
+function peticion() {
+    if(this.readyState == 4 && this.status == 200){
+        const data = JSON.parse(this.response);
+       
+        const HTMLResponse = document.querySelector("#appAPI");
+        
+        const template = data.map((user) => `<li>${user.name} ${user.email}</li>`);
+        
+        HTMLResponse.innerHTML = `<ul>${template}</ul>`;
+    }
+}
+
+xhr.addEventListener('load', peticion);
+xhr.open('GET', `${direccion}/users`);
+xhr.send();
