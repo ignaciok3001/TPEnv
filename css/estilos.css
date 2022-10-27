@@ -115,7 +115,7 @@ nav ul li {
   display: flex;
   align-items: center;
   text-align: center;
-  
+
 
 }
 
@@ -145,7 +145,6 @@ nav ul li {
   left: 100px;
 
 }
-/* Index contenedor IMAGEN INDEX end*/
 
 /* Projects section PRODUCTOS -------------------------------------- */
 .projects {
@@ -206,13 +205,37 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
+/* Nosotros ---------------------------------------*/
+
+.contenedorNosotros {
+  display: grid;
+  grid-template: 100px 1fr 100px / 400px 1fr;
+  grid-template-areas: "nosotrosLeft nosotrosRight"
+                        "respuestaaAPI nosotrosRight";
+
+}
+
+.nosotrosLeft {
+  grid-area: nosotrosLeft;
+}
+
+.nosotrosRight {
+  grid-area: nosotrosRight;
+}
+.item{
+  padding: 10px;
+  color:var(--primary-color)
+}
+.respuestaaAPI {
+  grid-area:respuestaAPI;
+}
 /* Formulario--------------------------------------*/
 
 .contacto {
   margin-top: 2rem;
   display: flex;
-  justify-content:space-evenly;
-  
+  justify-content: space-evenly;
+
 }
 
 .contacto h2 {
@@ -257,7 +280,7 @@ nav ul li {
 }
 
 
-.formulario_submit{
+.formulario_submit {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -311,9 +334,9 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  body {
+ /* body {
     background: green;
-  }
+  }*/
 
   /* Menu Hamburguesa--------------------------------------*/
 
@@ -337,7 +360,7 @@ footer {
     margin: 8px;
   }
 
-  .burger-menu{
+  .burger-menu {
     display: block;
   }
 
@@ -352,15 +375,10 @@ footer {
 
   }
 
-  .contacto {   
-    display: flex;
-    flex-direction: column;
-    
-  }
 
   .projects-container {
-    display:block;
-   /*flex-direction:column;*/
+    display: block;
+    /*flex-direction:column;*/
     grid-template-columns: repeat(2, 1fr);
 
   }
@@ -371,6 +389,17 @@ footer {
 
   }
 
+  .contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+
+}
   /* FOOTER --------------------------------------*/
   footer {
     flex-direction: column;
@@ -394,12 +423,12 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
- /* .projects-container {
+  /* .projects-container {
     flex-direction: column;
     grid-template-columns: repeat(5, 1fr);
   }*/
